@@ -28,7 +28,7 @@
 >##### 1. Rule-based chatbots
 >##### 2. Retrieval-based chatbots
 >##### 3. Intelligent chatbots
-
+ 
 ### Rule-based chatbots
 > These bots respond to users' inputs based on certain pre-specified rules. For instance, these rules can be defined as if-elif-else statements. While writing rules for these chatbots, it is important to expect all possible user inputs, else the bot may fail to answer properly. Hence, rule-based chatbots do not possess any cognitive skills.
 
@@ -53,4 +53,4 @@
 ### Happy Chatting!
 
 ![robo_chat](https://raw.githubusercontent.com/RajkumarGalaxy/dataset/master/Images/robo_chat.jpg)
-> [Image by Brett Jordan](https://unsplash.com/@brett_jordan)
+> [Image by Brett Jordan](https://unsplash.com/@brett_jordan) 
