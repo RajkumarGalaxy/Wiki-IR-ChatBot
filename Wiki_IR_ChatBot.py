@@ -193,13 +193,20 @@ class ChatBot():
             soup = BeautifulSoup(data, 'html.parser')
             # extract all paragraph data
             # scrape strings with html tag 'p'
-            para = soup.findAll('p')
-            # iterate over all paragraphs
-            for p in para:
+            p_data = soup.findAll('p')
+            # scrape strings with html tag 'dd'
+            dd_data = soup.findAll('dd')
+            # scrape strings with html tag 'li'
+            #li_data = soup.findAll('li')
+            p_list = [p for p in p_data]
+            dd_list = [dd for dd in dd_data]
+            #li_list = [li for li in li_data]
+            # iterate over all data
+            for tag in p_list+dd_list: #+li_list:
                 # a bucket to collect processed data
                 a = []
-                # iterate over para contents and tags
-                for i in p.contents:
+                # iterate over para, desc data and list items contents
+                for i in tag.contents:
                     # exclude references, superscripts, formattings
                     if i.name != 'sup' and i.string != None:
                         stripped = ' '.join(i.string.strip().split())
@@ -208,7 +215,7 @@ class ChatBot():
                 # with collected string pieces formulate a single string
                 # each string is a paragraph
                 self.text_data.append(' '.join(a))
-				
+            
 				
             # obtain sentences from paragraphs
             for i,para in enumerate(self.text_data):
@@ -237,13 +244,12 @@ class ChatBot():
         # remove punctuations
         text = text.lower().strip().translate(self.punctuation_dict) 
         # tokenize into words
-        words = nltk.word_tokenize(text)
+        words = nltk.word_tokenize(text) 
         # remove stopwords
         words = [w for w in words if w not in self.stopwords]
         # lemmatize 
         return [self.lemmatizer.lemmatize(w) for w in words]
 		
-
 
 # Happy Chatting!
 # Initialize ChatBot and start chatting.
