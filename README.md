@@ -52,5 +52,7 @@
 
 ### Happy Chatting!
 
+#### Acknowledgement: [Parul Pandey](https://www.linkedin.com/in/parulpandeyindia/)'s article on ["Building a simple chatbot in python using NLTK"](https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e) gave a good insight on Information Retrieval modelling.  
+
 ![robo_chat](https://raw.githubusercontent.com/RajkumarGalaxy/dataset/master/Images/robo_chat.jpg)
 > [Image by Brett Jordan](https://unsplash.com/@brett_jordan) 
