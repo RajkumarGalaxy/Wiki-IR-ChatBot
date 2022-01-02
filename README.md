@@ -4,7 +4,7 @@
 ### User is open to choose any topic of interest!
 
 ### In this project?
-> This project builds an information retrieval (IR) chatbot that can scrape Wikipedia using BeautifulSoup in the topic of user's interest and collect information against user's queries following a heuristic backed by TF-IDF score and cosine-similarity score. This Wiki-IR-ChatBot is user-friendly in permitting users to choose any topic and presenting either crisp and short response or detailed response. It leverages NLTK library to do text processing and scikit-learn library to do modeling. Let's dive deep!
+> This project builds an information retrieval (IR) chatbot that can scrape Wikipedia using BeautifulSoup in the topic of user's interest and collect information against user's queries following a heuristic backed by TF-IDF score and cosine-similarity score. This Wiki-IR-ChatBot is user-friendly in permitting users to choose any topic and presenting either crisp and short response or detailed response. It leverages NLTK library to do text processing and scikit-learn library to do modeling. Find more details with [the supporting blog article](https://www.linkedin.com/pulse/wiki-ir-chatbot-wikipedia-information-retrieval-bot-lakshmanamoorthy/) published at LinkedIn!
 
 #### This repository contains:
 
